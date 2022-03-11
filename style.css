@@ -1,0 +1,48 @@
+
+*::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat-Regular';
+
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../font/Montserrat-Regular.ttf') format('woff2'),
+    url('../font/Montserrat-Regular.ttf') format('woff');
+}
+header,footer{
+    background-color: #F1F1F3;
+}
+.nav-item:last-child{
+    position: relative;
+}
+header .nav-item:last-child::before {
+    content: '';
+    background-image: url("images/Star 1.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+h3{
+    color: #282B36;
+}
+.img{
+    border-radius:20px;
+}
+    button{
+    border-radius: 20px!important;
+}
+    .icons a{
+        width: 30px;
+        height: 30px;
+        background: #878B98;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .icons i{
+        color: #fff;
+    }

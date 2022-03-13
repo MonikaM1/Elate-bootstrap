@@ -1,8 +1,10 @@
 
 *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Montserrat-Regular';
 
+}
+.font{
+    font-family: 'Montserrat-Regular';
 }
 @font-face {
     font-family: 'Montserrat-Regular';
@@ -46,3 +48,40 @@ h3{
     .icons i{
         color: #fff;
     }
+    .select{
+        position: relative;
+    }
+    select,input{
+        width: 100%;
+    }
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+.select::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #868b91 transparent transparent transparent;
+    pointer-events: none;
+}
+select, input {
+    border: none;
+    box-shadow: 0 0 5px 1px #ececec;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+
+}

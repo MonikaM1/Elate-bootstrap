@@ -10,7 +10,6 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="../elate/css/style.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -41,22 +40,42 @@
             </div>
         </nav>
     </div>
-    <div>
-        <img class="img-fluid" src="images/header.png" alt="">
-    </div>
 </header>
-<div class="container">
+<div class="container mt-5">
+    <div class="row navbar-light">
+        <div class="col-md-6"> <ul class="d-flex">
+            <li class="hover mr_r30"><a href="">Apartments</a></li>
+            <li class="mr_r30"><a href="">Houses</a></li>
+            <li><a href="">Commercial</a></li>
+        </ul></div>
+        <div class="col-md-6">
+            <ul class="d-flex">
+            <li class="hover"><a href="">For rent</a></li>
+            <li class="mr_l30"><a href="">For sale</a></li>
+        </ul>
+            <label for="currency"></label>
+            <div class="currency">
+                <select class=" mr_l30" name="" id="currency">
+                    <option value="USD">USD</option>
+                    <option value="AMD" selected>AMD</option>
+                    <option value="RU">RU</option>
+                </select>
+            </div></div>
+    </div>
 <div class="row">
-    <div class="col"></div>
-    <div class="col">
+<div class="col-md-8">
+<div class="row">
+    <div class="col-md-3">
         <label for="rent">Renting</label>
         <div class="select">
             <select name="rent" id="rent">
                 <option value="daily">Daily</option>
                 <option value="weekly">Weekly</option>
                 <option value="monthly" selected>Monthly</option>
-            </select></div>
-    <div class="col">                            <div class="city">
+            </select>
+        </div>
+    </div>
+    <div class="col-md-3">
         <label for="city">City</label>
         <div class="select">
             <select id="city" name="city">
@@ -65,8 +84,8 @@
                 <option value="Vanadzor" selected>Vanadzor</option>
             </select>
         </div>
-    </div></div>
-    <div class="col"><div class="region">
+    </div>
+    <div class="col-md-3">
         <label for="region">Region</label>
         <div class="select">
             <select name="region" id="region">
@@ -80,16 +99,77 @@
                 <option value="Shirak">Shirak</option>
                 <option value="Lori">Lori</option>
             </select>
-        </div></div>
-    <div class="col"></div>
+        </div>
+    </div>
+    <div class="col-md-3"> <label for="rooms">Rooms</label>
+        <div class="select">
+            <select name="rooms" id="rooms">
+                <option value="select" hidden>Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
 </div>
-
-
-
+    <div class="row">
+        <div class="col-md-3">
+            <label for="price">Price</label>
+            <div class="df">
+                <div class="df">
+                    <input id="price" type="number" min="100" placeholder="100$">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label style="color: white" for="price1">Price</label>
+            <div class="df">
+                <div class="df">
+                    <input id="price1" type="number" min="100" placeholder="100$">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="code">Code</label>
+            <input id="code" type="text" placeholder="REUY345">
+        </div>
+        <div class="col-md-3">
+            <label for="layout">Layout</label>
+            <div class="select">
+                <select name="Layout" id="layout">
+                    <option value="select" hidden>Select</option>
+                    <option value="New building">New building</option>
+                    <option value="Khrushchov project">Khrushchov project</option>
+                    <option value="Stalin project">Stalin project</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-md-4">
+        <button class="btn btn-warning">SEARCH</button>
+    </div>
 
 
 
 </div>
+    <div class="row mt-5 d-flex justify-content-between">
+        <div class=" col-md-6 col-sm-6 col-12 mb-sm-2">
+            <img class="img-fluid img" src="images/app.png" alt="">
+        </div>
+        <div class="col-md-6 col-sm-6  col-12">
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-end">
+                    <h2>Bayron</h2><h5>Yerevan/Yerevan</h5>
+                </div>
+                <div class="col-md-12">
+                    <button class="btn bg-warning">RENT</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <footer>
     <div class="container">
         <div class="row navbar-light">

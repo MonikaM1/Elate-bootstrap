@@ -3,13 +3,17 @@
     box-sizing: border-box;
 
 }
+a{
+    color: #626777;
+}
+
 .font{
-    font-family: 'Montserrat-Regular';
+    font-family:'Montserrat-Regular';
 }
 @font-face {
     font-family: 'Montserrat-Regular';
-    src: url('../font/Montserrat-Regular.ttf') format('woff2'),
-    url('../font/Montserrat-Regular.ttf') format('woff');
+    src: url('font/Montserrat-Regular.ttf') format('woff2'),
+    url('font/Montserrat-Regular.ttf') format('woff');
 }
 header,footer{
     background-color: #F1F1F3;
@@ -27,15 +31,35 @@ header .nav-item:last-child::before {
     right: 20px;
     top: 15px;
 }
+.border-b{
+    border-bottom: 3px solid #ffc107;
+}
+.color{
+    color: #33D185;
+}
+.color1{
+    color: #626777;
+}
 h3{
     color: #282B36;
+}
+ul{
+    list-style: none;
 }
 .img{
     border-radius:20px;
 }
     button{
-    border-radius: 20px!important;
+        border-radius: 20px!important;
+        padding:10px 15px;
+
 }
+    .button button{
+        width: 100%;
+    }
+    .button{
+        margin-top: 32px;
+    }
     .icons a{
         width: 30px;
         height: 30px;
@@ -48,7 +72,7 @@ h3{
     .icons i{
         color: #fff;
     }
-    .select{
+    .select.currency{
         position: relative;
     }
     select,input{
@@ -61,6 +85,9 @@ select {
     background-color: transparent;
     outline: none;
 }
+․currency{
+
+}
 
 select::-ms-expand {
     display: none;
@@ -70,6 +97,18 @@ select::-ms-expand {
     position: absolute;
     right: 25px;
     bottom: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #868b91 transparent transparent transparent;
+    pointer-events: none;
+}
+.currency::after{
+    content: "";
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
     width: 0;
     height: 0;
     border-style: solid;

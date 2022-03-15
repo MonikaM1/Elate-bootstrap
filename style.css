@@ -3,6 +3,9 @@
     box-sizing: border-box;
 
 }
+ul,a,li{
+    padding: 0;
+}
 a{
     color: #626777;
 }
@@ -33,6 +36,14 @@ header .nav-item:last-child::before {
 }
 .border-b{
     border-bottom: 3px solid #ffc107;
+}
+.app-description{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px #ececec;
+    padding: 40px 20px;
+}
+.shadow{
+    box-shadow: 0 0 5px 1px #ececec;
 }
 .color{
     color: #33D185;
@@ -77,6 +88,9 @@ ul{
     }
     select,input{
         width: 100%;
+    }
+    .border-radius{
+        border-radius: 20px;
     }
 select {
     -moz-appearance: none;

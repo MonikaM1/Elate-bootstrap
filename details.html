@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -44,7 +48,7 @@
         <div class="col-md-12">
             <div class="app_details d-flex justify-content-between align-items-center py-4">
                 <div>
-                    <p class="color1"><span class="street">Bayron</span>/RCEA3267</p>
+                   <h3>Bayron <small>/ RCEA3248</small></h3>
                     <p class="color1">3 Bedrooms -5/3 floor -200sqm -New Building</p>
                 </div>
                 <div>
@@ -58,7 +62,7 @@
         </div>
         <div class="col-md--6"></div>
     </div>
-    <div>
+    <div class="mb-4">
         <div id="carouselExampleIndicators" class="carousel slide mb-3" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -76,7 +80,7 @@
                     <img class="d-block w-100" src="images/kitchen.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/bathroom.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="images/bedroom-sets.jpg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,7 +97,7 @@
             <div class="col"><img class="img-fluid border-radius" src="images/kitchen.jpg" alt=""></div>
             <div class="col"><img class="img-fluid border-radius" src="images/bathroom.jpg" alt=""></div>
             <div class="col"><img class="img-fluid border-radius" src="images/bedroom-sets.jpg" alt=""></div>
-            <div class="col"><img class="img-fluid border-radius" src="images/livingroom.jpg" alt=""></div>
+            <div class="col"><img class="img-fluid border-radius" src="images/kitchen.jpg" alt=""></div>
         </div>
     </div>
     <p>
@@ -114,7 +118,7 @@
         <div class="col-12">
             <div class="collapse multi-collapse" id="multiCollapseExample2">
                 <div class="card card-body video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1XAWuyTKQ2Y"
+                    <iframe src="https://www.youtube.com/embed/1XAWuyTKQ2Y"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -126,78 +130,125 @@
 
     </div>
 
-    <div class="row shadow border-radius mb-5">
-        <div></div>
-        <div class="col-md-12 ">
-            <p class="font-weight-bold">Featured</p>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li>New Repaired</li>
-                <li>Partly furnished</li>
-                <li>Monolith building</li>
-                <li>Open balcony</li>
-                <li>Street view</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li>1.5 Bethrooms</li>
-                <li>Air Conditioners</li>
-                <li>Centralized Heating system</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li>Euro Windows</li>
-                <li>Wooden Doors</li>
-                <li>Parquet Floor</li>
-                <li>Double Curtains</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li>New Elevator</li>
-                <li>Street Entrance</li>
-                <li>Security Guards</li>
-                <li>Underground Parking</li>
-                <li>Daily Garbage Pickup</li>
-            </ul>
-        </div>
-    </div>
-    <div class="row shadow border-radius mb-5">
-        <div></div>
-        <div class="col-md-12 ">
-            <p class="font-weight-bold">Available</p>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li>TV</li>
-                <li>Cable TV</li>
-                <li>WiFi Internet</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li>Kitchen Furniture</li>
-                <li>Build in cabinets</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li>Refrigerator</li>
-                <li>Kitchen Appliances</li>
-            </ul>
-        </div>
-        <div class="col-md-3">  <ul>
-            <li>Shower Cabin</li>
-            <li>Bathtab</li>
-            <li>Jacuzzi</li>
-            <li>Washing Machine</li>
-        </ul>
-        </div>
-    </div>
+    <div class="apartment_description shadow border-radius">
+        <div class="columns-container row">
+            <div class="col-12"><h3>Feautured</h3></div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12 d-flex align-items-center">
+                        <ul>
+                            <li>New Repaired</li>
+                            <li>Partly furnished</li>
+                            <li>Monolith building</li>
+                            <li>Open balcony</li>
+                            <li>Street view</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 display-flex align-items-center">
+                        <ul>
+                            <li>1.5 Bethrooms</li>
+                            <li>Air Conditioners</li>
+                            <li>Centralized Heating system</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 display-flex align-items-center">
+                        <ul>
+                            <li>Euro Windows</li>
+                            <li>Wooden Doors</li>
+                            <li>Parquet Floor</li>
+                            <li>Double Curtains</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 display-flex align-items-center">
+                        <ul>
+                            <li>New Elevator</li>
+                            <li>Street Entrance</li>
+                            <li>Security Guards</li>
+                            <li>Underground Parking</li>
+                            <li>Daily Garbage Pickup</li>
+                        </ul>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+
+    </div>
+    <div class="apartment_description shadow border-radius">
+        <div class="columns-container">
+            <div class=" col-12"><h3>Available</h3></div>
+            <div class="col-12">
+                <div class="row">
+                    <div class=" col-md-3 col-sm-6 col-12 d-flex align-items-center">
+                        <ul>
+                            <li>TV</li>
+                            <li>Cable TV</li>
+                            <li>WiFi Internet</li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-3 col-sm-6  col-12 d-flex align-items-center">
+                        <ul>
+                            <li>Kitchen Furniture</li>
+                            <li>Build in cabinets</li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-3 col-sm-6 col-12 d-flex align-items-center">
+                        <ul>
+                            <li>Refrigerator</li>
+                            <li>Kitchen Appliances</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6  col-12 d-flex align-items-center">
+                        <ul>
+                            <li>Shower Cabin</li>
+                            <li>Bathtab</li>
+                            <li>Jacuzzi</li>
+                            <li>Washing Machine</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="contactus df jc_between ">
+                    <div class="contact_us_call df">
+                        <div class="call_buttons df fd_col">
+                            <a href="" class="call_button">VIBER CALL</a>
+                            <a href="" class="call_button">WHATSAPP CALL</a>
+                        </div>
+                        <div class="inner df ">
+                            <div class="contact_us_social df jc_center fd_col">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque disstiae mollitia odio optio
+                                    quia
+                                    sit!</p>
+                                <div class="icons df">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="app_price ">
+                                <span>Monthly:</span>
+                                <p class="color">2900 USD</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div><p class="d-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque disstiae
+                        mollitia odio optio quia
+                        sit!</p></div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer>
@@ -255,7 +306,6 @@
     </div>
     <div class="row"></div>
 </footer>
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

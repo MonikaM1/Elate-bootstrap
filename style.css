@@ -3,27 +3,33 @@
     box-sizing: border-box;
 
 }
-ul,a,li{
+
+ul, a, li {
     padding: 0;
 }
-a{
+
+a {
     color: #626777;
 }
 
-.font{
-    font-family:'Montserrat-Regular';
+.font {
+    font-family: 'Montserrat-Regular';
 }
+
 @font-face {
     font-family: 'Montserrat-Regular';
     src: url('font/Montserrat-Regular.ttf') format('woff2'),
     url('font/Montserrat-Regular.ttf') format('woff');
 }
-header,footer{
+
+header, footer {
     background-color: #F1F1F3;
 }
-.nav-item:last-child{
+
+.nav-item:last-child {
     position: relative;
 }
+
 header .nav-item:last-child::before {
     content: '';
     background-image: url("images/Star 1.png");
@@ -31,81 +37,164 @@ header .nav-item:last-child::before {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 20px;
-    top: 15px;
+    right: 24px;
+    top: 13px;
 }
-.border-b{
+
+.border-b {
     border-bottom: 3px solid #ffc107;
 }
-.app-description{
+
+.border-radius {
     border-radius: 20px;
-    box-shadow: 0 0 5px 1px #ececec;
+}
+
+.app-description {
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(40, 43, 54, 0.1);
     padding: 40px 20px;
 }
-.shadow{
+
+.shadow {
     box-shadow: 0 0 5px 1px #ececec;
 }
-.color{
+
+.color {
     color: #33D185;
 }
-.color1{
+
+.more{
+    color: #000000;
+}
+.color1 {
     color: #626777;
 }
-h3{
+
+h3 {
     color: #282B36;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.img{
-    border-radius:20px;
+
+.img {
+    border-radius: 20px;
 }
-    button{
-        border-radius: 20px!important;
-        padding:10px 15px;
+
+button {
+    border-radius: 20px !important;
+    padding: 10px 15px;
 
 }
-    .button button{
-        width: 100%;
-    }
-    .button{
-        margin-top: 32px;
-    }
-    .icons a{
-        width: 30px;
-        height: 30px;
-        background: #878B98;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-    }
-    .icons i{
-        color: #fff;
-    }
-    .select.currency{
-        position: relative;
-    }
-    select,input{
-        width: 100%;
-    }
-    .border-radius{
-        border-radius: 20px;
-    }
-select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    outline: none;
-}
-․currency{
 
+.button button {
+    width: 100%;
+}
+
+
+.icons a {
+    width: 30px;
+    height: 30px;
+    background: #878B98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icons i {
+    color: #fff;
+}
+.search button{
+    margin-top: 32px;
+    width: 100%;
+}
+.select.currency {
+    position: relative;
+}
+
+select, input {
+    width: 100%;
+}
+
+.columns-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 select::-ms-expand {
     display: none;
 }
+.more {
+    margin-bottom: 28px;
+}
+
+.video,.map{
+    margin-bottom: 34px;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+
+}
+.video,.map::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video,.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+iframe{
+    width: 100%;
+}
+.more{
+    position: relative;;
+}
+.more::after {
+    content: "";
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -5px;
+    top: 14px;
+}
+.more .select:nth-child(2){
+    border-bottom: 4px solid #ffb400;
+}
+
+.apartment_description {
+    margin: 40px 0;
+}
+
+.button button {
+    width: 100%;
+}
+.button, .search button{
+    font-weight: 600;
+}
+
+
+
+.icons a {
+    width: 30px;
+    height: 30px;
+    background: #878B98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
 .select::after {
     content: "";
     position: absolute;
@@ -118,10 +207,19 @@ select::-ms-expand {
     border-color: #868b91 transparent transparent transparent;
     pointer-events: none;
 }
-.currency::after{
+
+.icons i {
+    color: #fff;
+}
+
+.select.currency {
+    position: relative;
+}
+
+.currency::after {
     content: "";
     position: absolute;
-    right: 22px;
+    right: 20px;
     bottom: 22px;
     width: 0;
     height: 0;
@@ -130,11 +228,96 @@ select::-ms-expand {
     border-color: #868b91 transparent transparent transparent;
     pointer-events: none;
 }
+
 select, input {
+    width: 100%;
     border: none;
     box-shadow: 0 0 5px 1px #ececec;
     border-radius: 30px;
     padding: 15px;
     cursor: pointer;
+}
+
+.currency select {
+    width: unset;
+}
+
+.border-radius {
+    border-radius: 20px;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.descr_txt p{
+   margin-bottom: 0!important;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+}
+
+.descr_txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.block_container {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+
+@media screen and (min-width: 320px)and (max-width: 768px) {
+    p, a {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .currency::after {
+        left: 70px;
+        right: 0;
+    }
+
+}
+.call_button {
+    border-radius: 20px;
+    background-color: #ffb400;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    color: #000000;
+    display: flex;
+    position: relative;
+    line-height: 50px;
+    padding: 0 39px;
+}
+.call_button::before{
+    content: '';
+    background-image: url("../images/whatsapp-brands.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 26px;
+    height: 30px;
+    left: 10px;
+    top: 10px;
 
 }

@@ -63,9 +63,10 @@ header .nav-item:last-child::before {
     color: #33D185;
 }
 
-.more{
+.more {
     color: #000000;
 }
+
 .color1 {
     color: #626777;
 }
@@ -106,10 +107,12 @@ button {
 .icons i {
     color: #fff;
 }
-.search button{
+
+.search button {
     margin-top: 32px;
     width: 100%;
 }
+
 .select.currency {
     position: relative;
 }
@@ -127,36 +130,41 @@ select, input {
 select::-ms-expand {
     display: none;
 }
+
 .more {
     margin-bottom: 28px;
 }
 
-.video,.map{
+.video, .map {
     margin-bottom: 34px;
     overflow: hidden;
     position: relative;
-    width:100%;
+    width: 100%;
 
 }
-.video,.map::after {
+
+.video, .map::after {
     padding-top: 56.25%;
     display: block;
     content: '';
 }
 
-.video,.map iframe {
+.video, .map iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-iframe{
+
+iframe {
     width: 100%;
 }
-.more{
+
+.more {
     position: relative;;
 }
+
 .more::after {
     content: "";
     border: solid black;
@@ -168,7 +176,8 @@ iframe{
     right: -5px;
     top: 14px;
 }
-.more .select:nth-child(2){
+
+.more .select:nth-child(2) {
     border-bottom: 4px solid #ffb400;
 }
 
@@ -179,10 +188,10 @@ iframe{
 .button button {
     width: 100%;
 }
-.button, .search button{
+
+.button, .search button {
     font-weight: 600;
 }
-
 
 
 .icons a {
@@ -259,8 +268,9 @@ select {
     flex-direction: column;
     justify-content: center;
 }
-.descr_txt p{
-   margin-bottom: 0!important;
+
+.descr_txt p {
+    margin-bottom: 0 !important;
 }
 
 .img-box {
@@ -280,12 +290,13 @@ select {
     justify-content: space-around;
 }
 
-.call_button{
+.call_button {
     display: flex;
     position: relative;
     line-height: 50px;
     padding: 0 39px;
 }
+
 .call_button::before {
     content: '';
     background-image: url(images/whatsapp-brands.svg);
@@ -295,7 +306,15 @@ select {
     width: 26px;
     height: 30px;
     left: 10px;
-    top: 10px;}
+    top: 10px;
+}
+.contacts{
+    font-weight: 600;
+}
+.heading{
+    font-size: 22px;
+    font-weight: 400;
+}
 
 @media screen and (min-width: 320px)and (max-width: 768px) {
     p, a {
